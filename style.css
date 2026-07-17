@@ -41,18 +41,24 @@ body {
     border-right: 1px solid var(--border-color);
 }
 
-.sidebar ul {
-    list-style: none;
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.sidebar li {
-    margin-bottom: 16px;
+.menu a {
     color: var(--text-muted);
-    cursor: pointer;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s;
 }
 
-.sidebar li:hover {
-    color: var(--text-main);
+.menu a:hover,
+.menu a.active {
+    background-color: #0f172a;
+    color: var(--accent-blue);
 }
 
 .brand {
