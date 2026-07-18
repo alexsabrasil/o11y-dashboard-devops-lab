@@ -13,73 +13,81 @@
 <body>
     <div class="app-layout">
 
-    <aside class="sidebar">
-    <div class="brand">
-        <span class="brand-icon">⚡</span>
-        <h1>O11y-Dash</h1>
-    </div>
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-icon">⚡</span>
+                <h1>O11y-Dash</h1>
+            </div>
 
-        <nav class="menu">
-            <a href="#" class="active">Visão Geral</a>
-            <a href="#">Métricas</a>
-            <a href="#">Logs de Rede</a>
-            <a href="#">Alertas</a>
-            <a href="#">Configurações</a>
-        </nav>
-    </aside>
+            <nav class="menu">
+                <a href="#" class="active">Visão Geral</a>
+                <a href="#">Métricas</a>
+                <a href="#">Logs de Rede</a>
+                <a href="#">Alertas</a>
+                <a href="#">Configurações</a>
+            </nav>
+        </aside>
 
+        <header class="topbar">
+            <div class="search-box">
+                <input
+                    type="text"
+                    placeholder="Buscar métricas, nós ou logs..."
+                >
+            </div>
 
-    <header class="topbar">
-        <div class="search-box">
-            <input
-                type="text"
-                placeholder="Buscar métricas, nós ou logs..."
-        >
-        </div>
+            <div class="user-profile">
+                <div class="avatar">Admin</div>
+            </div>
+        </header>
 
-        <div class="user-profile">
-            <div class="avatar">Admin</div>
-        </div>
-    </header>
+        <main class="content-area">
+            <div class="dashboard-header">
+                <h2>Visão Geral do Sistema</h2>
+                <span class="status-badge">🟢 Sistema Operacional</span>
+            </div>
 
-
-    <main class="content-area">
-        <div class="dashboard-header">
-            <h2>Visão Geral do Sistema</h2>
-            <span class="status-badge">🟢 Sistema Operacional</span>
-        </div>
-
-        <div class="kpi-grid">
-            <div class="kpi-card">
-                <h3>Uptime Servidores</h3>
-                <div class="value">99.99%</div>
-                <div class="trend positive">↑ 0.01%</div>
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <h3>Uptime Servidores</h3>
+                    <div class="value">99.99%</div>
+                    <div class="trend positive">↑ 0.01%</div>
+                </div>
 
                 <div class="kpi-card">
-                <h3>Latência Média (p95)</h3>
-                <div class="value">42ms</div>
-                <div class="trend negative">↓ 5ms</div>
+                    <h3>Latência Média (p95)</h3>
+                    <div class="value">42ms</div>
+                    <div class="trend negative">↓ 5ms</div>
+                </div>
 
                 <div class="kpi-card">
-                <h3>Requisições / seg</h3>
-                <div class="value">12,450</div>
-                <div class="trend positive">↑ 1,200</div>
+                    <h3>Requisições / seg</h3>
+                    <div class="value">12,450</div>
+                    <div class="trend positive">↑ 1,200</div>
+                </div>
 
                 <div class="kpi-card">
                     <h3>Taxa de Erro (5xx)</h3>
                     <div class="value alert">0.15%</div>
-                <div class="trend danger">↑ 0.05%</div>
+                    <div class="trend danger">↑ 0.05%</div>
+                </div>
             </div>
 
-            </div>
+            <div class="chart-section">
+                <h3>Tráfego de Rede vs CPU</h3>
 
+                <div class="chart-mock">
+                    <div class="bar" style="height: 60%"></div>
+                    <div class="bar" style="height: 80%"></div>
+                    <div class="bar" style="height: 40%"></div>
+                    <div class="bar" style="height: 90%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar" style="height: 70%"></div>
+                    <div class="bar" style="height: 30%"></div>
+                </div>
             </div>
-
-           </div>
-        </div>
-    </main>
+        </main>
 
     </div>
-
 </body>
 </html>
