@@ -42,12 +42,16 @@
         </header>
 
         <main class="content-area">
+
             <div class="dashboard-header">
                 <h2>Visão Geral do Sistema</h2>
-                <span class="status-badge">🟢 Sistema Operacional</span>
+                <span class="status-badge">
+                    🟢 Sistema Operacional
+                </span>
             </div>
 
             <div class="kpi-grid">
+
                 <div class="kpi-card">
                     <h3>Uptime Servidores</h3>
                     <div class="value">99.99%</div>
@@ -71,6 +75,7 @@
                     <div class="value alert">0.15%</div>
                     <div class="trend danger">↑ 0.05%</div>
                 </div>
+
             </div>
 
             <div class="chart-section">
@@ -86,6 +91,31 @@
                     <div class="bar" style="height: 30%"></div>
                 </div>
             </div>
+
+            <div class="logs-section">
+                <h3>Logs de Eventos Recentes</h3>
+
+                <div class="log-list">
+
+                    <div class="log-item error">
+                        <span class="timestamp">10:45:21</span>
+                        <span class="service">[auth-service]</span>
+                        <span class="message">
+                            Connection timeout to database
+                        </span>
+                    </div>
+
+                    <div class="log-item info">
+                        <span class="timestamp">10:45:19</span>
+                        <span class="service">[payment-api]</span>
+                        <span class="message">
+                            Healthcheck passed
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
         </main>
 
     </div>
